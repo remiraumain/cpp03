@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 07:18:31 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/21 07:38:59 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/21 08:20:06 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,10 @@ int	main(void)
 		y = x;
 		y.guardGate();
 	}
+
+	ClapTrap* p = new ScavTrap("S");
+	p->attack("X");
+	delete (p);  
 
 	return (0);
 }

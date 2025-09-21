@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 07:10:08 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/21 07:30:20 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/21 07:59:54 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,11 @@ ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 ScavTrap	&ScavTrap::operator=(const ScavTrap &copy)
 {
 	if (this != &copy)
+	{
+		std::string	destName = _name;
 		ClapTrap::operator=(copy);
-	std::cout << "ScavTrap " << _name << " copy-assigned from " << copy._name << std::endl;
+		std::cout << "ScavTrap " << destName << " copy-assigned from " << copy._name << std::endl;
+	}
 	return (*this);
 }
 
