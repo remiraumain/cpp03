@@ -6,7 +6,7 @@
 /*   By: rraumain <rraumain@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/21 00:31:21 by rraumain          #+#    #+#             */
-/*   Updated: 2025/09/21 01:31:14 by rraumain         ###   ########.fr       */
+/*   Updated: 2025/09/21 07:30:43 by rraumain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ ClapTrap	&ClapTrap::operator=(const ClapTrap &copy)
 ClapTrap::~ClapTrap(void)
 {
 	std::cout << "ClapTrap " << _name << " destructed\n";
-};
+}
 
 void	ClapTrap::attack(const std::string& target)
 {
